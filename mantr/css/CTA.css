@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+.cta-section {
+  @apply mx-auto max-w-6xl px-6 py-16 sm:py-20;
+}
+
+.cta-container {
+  @apply relative overflow-hidden rounded-3xl border border-black/10 bg-white/60 p-8 shadow-sm backdrop-blur sm:p-12;
+  @apply dark:border-white/10 dark:bg-white/5;
+}
+
+.cta-gradient-overlay {
+  @apply pointer-events-none absolute inset-0 opacity-60;
+  background: radial-gradient(900px circle at 20% 10%, color-mix(in oklab, var(--accent-saffron) 35%, transparent) 0%, transparent 55%),
+              radial-gradient(900px circle at 90% 20%, color-mix(in oklab, var(--accent-royal) 25%, transparent) 0%, transparent 55%);
+}
+
+.cta-content {
+  @apply relative;
+}
+
+.cta-heading {
+  @apply text-balance text-2xl font-semibold tracking-tight text-black sm:text-3xl;
+  @apply dark:text-white;
+}
+
+.cta-description {
+  @apply mt-3 max-w-2xl text-pretty text-base leading-7 text-black/70;
+  @apply dark:text-white/70;
+}

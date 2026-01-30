@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+.hero-section {
+  @apply relative overflow-hidden;
+}
+
+.hero-container {
+  @apply mx-auto max-w-6xl px-6 pt-20 pb-12 sm:pt-28 sm:pb-16;
+}
+
+.hero-content {
+  @apply flex flex-col items-start gap-6;
+}
+
+.hero-badge {
+  @apply inline-flex items-center rounded-full border border-black/10 bg-white/60 px-3 py-1 text-xs font-medium tracking-wide text-black/70 backdrop-blur;
+  @apply dark:border-white/10 dark:bg-white/5 dark:text-white/70;
+}
+
+.hero-heading {
+  @apply max-w-3xl text-balance text-4xl font-semibold leading-tight tracking-tight text-black sm:text-6xl;
+  @apply dark:text-white;
+}
+
+.hero-gradient-text {
+  @apply bg-gradient-to-r from-[color:var(--accent-saffron)] via-[color:var(--accent-gold)] to-[color:var(--accent-royal)] bg-clip-text text-transparent;
+}
+
+.hero-description {
+  @apply max-w-2xl text-pretty text-lg leading-8 text-black/70;
+  @apply dark:text-white/70;
+}
+
+.hero-cta-container {
+  @apply flex flex-col gap-3 sm:flex-row sm:items-center;
+}
+
+.hero-cta-primary {
+  @apply inline-flex h-12 items-center justify-center rounded-full bg-black px-6 text-sm font-semibold text-white shadow-sm transition;
+  @apply hover:bg-black/90;
+  @apply dark:bg-white dark:text-black dark:hover:bg-white/90;
+}
+
+.hero-cta-secondary {
+  @apply inline-flex h-12 items-center justify-center rounded-full border border-black/10 bg-white/60 px-6 text-sm font-semibold text-black/80 backdrop-blur transition;
+  @apply hover:bg-white/80;
+  @apply dark:border-white/10 dark:bg-white/5 dark:text-white/80 dark:hover:bg-white/10;
+}

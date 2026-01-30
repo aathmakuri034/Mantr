@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+.features-section {
+  @apply mx-auto max-w-6xl px-6 py-16 sm:py-20;
+}
+
+.features-header {
+  @apply flex flex-col gap-4;
+}
+
+.features-heading {
+  @apply text-balance text-2xl font-semibold tracking-tight text-black sm:text-3xl;
+  @apply dark:text-white;
+}
+
+.features-description {
+  @apply max-w-2xl text-pretty text-base leading-7 text-black/70;
+  @apply dark:text-white/70;
+}
+
+.features-grid {
+  @apply mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3;
+}
+
+.features-card {
+  @apply group rounded-2xl border border-black/10 bg-white/60 p-6 shadow-sm backdrop-blur transition;
+  @apply hover:-translate-y-0.5 hover:bg-white/80 hover:shadow-md;
+  @apply dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10;
+}
+
+.features-card-header {
+  @apply flex items-center gap-3;
+}
+
+.features-icon-wrapper {
+  @apply inline-flex h-10 w-10 items-center justify-center rounded-xl bg-black/5 text-black/70 transition;
+  @apply group-hover:bg-black/10;
+  @apply dark:bg-white/10 dark:text-white/80 dark:group-hover:bg-white/15;
+}
+
+.features-icon {
+  @apply h-5 w-5;
+}
+
+.features-card-title {
+  @apply text-base font-semibold text-black;
+  @apply dark:text-white;
+}
+
+.features-card-description {
+  @apply mt-4 text-sm leading-6 text-black/70;
+  @apply dark:text-white/70;
+}

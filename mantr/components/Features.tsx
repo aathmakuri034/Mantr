@@ -1,3 +1,5 @@
+import "../css/Features.css";
+
 const features = [
   {
     title: "Real Conversations, Real Situations",
@@ -7,7 +9,7 @@ const features = [
       <svg
         aria-hidden="true"
         viewBox="0 0 24 24"
-        className="h-5 w-5"
+        className="features-icon"
         fill="none"
       >
         <path
@@ -28,7 +30,7 @@ const features = [
       <svg
         aria-hidden="true"
         viewBox="0 0 24 24"
-        className="h-5 w-5"
+        className="features-icon"
         fill="none"
       >
         <path
@@ -55,7 +57,7 @@ const features = [
       <svg
         aria-hidden="true"
         viewBox="0 0 24 24"
-        className="h-5 w-5"
+        className="features-icon"
         fill="none"
       >
         <path
@@ -72,34 +74,23 @@ const features = [
 
 export function Features() {
   return (
-    <section id="features" className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
-      <div className="flex flex-col gap-4">
-        <h2 className="text-balance text-2xl font-semibold tracking-tight text-black sm:text-3xl dark:text-white">
-          Real practice. Real progress.
-        </h2>
-        <p className="max-w-2xl text-pretty text-base leading-7 text-black/70 dark:text-white/70">
+    <section id="features" className="features-section">
+      <div className="features-header">
+        <h2 className="features-heading">Real practice. Real progress.</h2>
+        <p className="features-description">
           Everything you need to move from memorizing to speaking—built around
           conversation, structure, and personalization.
         </p>
       </div>
 
-      <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="features-grid">
         {features.map((f) => (
-          <div
-            key={f.title}
-            className="group rounded-2xl border border-black/10 bg-white/60 p-6 shadow-sm backdrop-blur transition hover:-translate-y-0.5 hover:bg-white/80 hover:shadow-md dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10"
-          >
-            <div className="flex items-center gap-3">
-              <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-black/5 text-black/70 transition group-hover:bg-black/10 dark:bg-white/10 dark:text-white/80 dark:group-hover:bg-white/15">
-                {f.icon}
-              </div>
-              <h3 className="text-base font-semibold text-black dark:text-white">
-                {f.title}
-              </h3>
+          <div key={f.title} className="features-card">
+            <div className="features-card-header">
+              <div className="features-icon-wrapper">{f.icon}</div>
+              <h3 className="features-card-title">{f.title}</h3>
             </div>
-            <p className="mt-4 text-sm leading-6 text-black/70 dark:text-white/70">
-              {f.description}
-            </p>
+            <p className="features-card-description">{f.description}</p>
           </div>
         ))}
       </div>
