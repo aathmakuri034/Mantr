@@ -10,9 +10,9 @@ export default function Home() {
       <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
         <a
           href="#"
-          className="inline-flex items-center gap-2 text-sm font-semibold tracking-tight text-black dark:text-white"
+          className="inline-flex items-center gap-2 text-xl font-semibold tracking-tight text-black dark:text-white"
         >
-          <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-black/5 text-black dark:bg-white/10 dark:text-white">
+          <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-black/5 text-black dark:bg-white/10 dark:text-white">
             म
           </span>
           Mantr
