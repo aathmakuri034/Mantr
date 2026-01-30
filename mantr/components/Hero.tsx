@@ -24,9 +24,9 @@ export function Hero() {
             <a href="#waitlist" className="hero-cta-primary">
               Get Early Access
             </a>
-            <a href="#features" className="hero-cta-secondary">
+            {/* <a href="#features" className="hero-cta-secondary">
               See how it works
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

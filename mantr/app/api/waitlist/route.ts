@@ -26,6 +26,7 @@ export async function POST(req: Request) {
     await insertWaitlistEntry(parsed.data);
     return NextResponse.json({ ok: true }, { status: 201 });
   } catch (err) {
+    console.error("Waitlist submission error:", err);
     const e = err as Partial<MongoServerError> & { code?: number };
     if (e.code === 11000) {
       return NextResponse.json(

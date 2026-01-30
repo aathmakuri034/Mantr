@@ -85,7 +85,7 @@ export function Features() {
 
       <div className="features-grid">
         {features.map((f) => (
-          <div key={f.title} className="features-card">
+          <div key={f.title} className="features-card group">
             <div className="features-card-header">
               <div className="features-icon-wrapper">{f.icon}</div>
               <h3 className="features-card-title">{f.title}</h3>
